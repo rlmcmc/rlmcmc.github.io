@@ -1,0 +1,307 @@
+body {
+  background: url(daenerys.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+h1 {
+  font-weight: bold;
+  font-size: 22px;
+}
+p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.texts {
+  padding: 10px;
+  display: inline-block;
+  color: red;
+  width: 15%;
+}
+
+#game_message {
+  padding: 5px;
+  font-size: 25px;
+  color: yellow;
+  font-weight: bold;
+}
+#score, #timer {
+  display: inline-block;
+}
+#timer {
+  margin-left: 10px;
+}
+
+
+#hillary {
+  position: absolute;
+  background-size: contain;
+  background-image: url(hillary.png);
+  width: 110px;
+  height: 115px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#hillary.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadhillary.png);
+  width: 290px;
+  height: 290px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#cersei {
+  position: absolute;
+  background-size: contain;
+  background-image: url(cersei.jpg);
+  width: 110px;
+  height: 155px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#cersei.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(cerseidead.png);
+  width: 290px;
+  height: 290px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#eddard {
+  position: absolute;
+  background-size: contain;
+  background-image: url(eddard.png);
+  width: 150px;
+  height: 150px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+
+#eddard.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadeddard.png);
+  width: 290px;
+  height: 290px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#hodor {
+  position: absolute;
+  background-size: contain;
+  background-image: url(hodor.png);
+  width: 130px;
+  height: 155px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#hodor.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadhodor.png);
+  width: 290px;
+  height: 290px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#joffrey {
+  position: absolute;
+  background-size: contain;
+  background-image: url(joffrey.png);
+  width: 110px;
+  height: 155px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#joffrey.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadjoffrey.png);
+  width: 160px;
+  height: 160px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+
+#jonsnow {
+  position: absolute;
+  background-size: contain;
+  background-image: url(jonsnow.png);
+  width: 160px;
+  height: 160px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#jonsnow.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadjonsnow.png);
+  width: 160px;
+  height: 160px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#nun {
+  position: absolute;
+  background-size: contain;
+  background-image: url(nun.png);
+  width: 170px;
+  height: 170px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#nun.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadnun.png);
+  width: 160px;
+  height: 160px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#sansa {
+  position: absolute;
+  background-size: contain;
+  background-image: url(sansa.png);
+  width: 110px;
+  height: 155px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#sansa.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(sansadead.png);
+  width: 160px;
+  height: 160px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#tyrion {
+  position: absolute;
+  background-size: contain;
+  background-image: url(tyrion.png);
+  width: 110px;
+  height: 155px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#tyrion.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(tyriondead.png);
+  width: 300px;
+  height: 300px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#tywin {
+  position: absolute;
+  background-size: contain;
+  background-image: url(tywin.png);
+  width: 160px;
+  height: 160px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#tywin.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(tywindead.jpg);
+  width: 300px;
+  height: 300px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#whitewalker {
+  position: absolute;
+  background-size: contain;
+  background-image: url(whitewalker.png);
+  width: 110px;
+  height: 155px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#whitewalker.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadwhitewalker1.png);
+  width: 300px;
+  height: 300px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#whitewalker2 {
+  position: absolute;
+  background-size: contain;
+  background-image: url(whitewalker2.png);
+  width: 110px;
+  height: 155px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#whitewalker2.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(deadwhitewalker2.png);
+  width: 300px;
+  height: 300px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+#direwolf {
+  position: absolute;
+  background-size: contain;
+  background-image: url(direwolf.png);
+  width: 200px;
+  height: 200px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+
+}
+#direwolf.dead  {
+ position: absolute;
+  background-size: contain;
+  background-image: url(direwolfdead.png);
+  width: 300px;
+  height: 300px;
+  transition: top 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+}
+
+
