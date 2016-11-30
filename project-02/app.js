@@ -39,13 +39,12 @@ app.post('/info', function(req, res){
     return data.json()
    })
    .then(function(json){
-    console.log('POST DATA', json);
-    // res.redirect('/');
-    //console.log(json.data)
-    res.render('states/index', json)
+    console.log(json.data[0].description)
+    res.render('states/index', {stateChosen: json.data})
+    //res.json(json)
    })
    .catch(function(err){
-    console.log('err');
+    console.log('err' + err);
    })
 })
 
