@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>National Park Directory</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<a href="states">States</a>
+<div id="main-content">
+
+  <h1 id="text-box">Which State Are You Interested In?</h1>
+
+
+  <form class="pure-form" method="POST" action="/info">
+    <input id="state_entered" type="text" name="state" class="pure-input-rounded">
+    <button id="submit_button" type="submit" class="pure-button">Search</button>
+  </form>
+  </div>
+  <h1 id="state_display"></h1>
+
+<div id="map">
+ <img src="usaMap.png" alt="">
+     </div>
+</div><!-- /row -->
+
+
+
+
+
+
+  </div>
+
+  <script src="/scripts/jquery.js"></script>
+  <script src="/scripts/main.js"></script>
+
+
+</body>
+</html>
