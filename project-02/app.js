@@ -39,7 +39,7 @@ app.post('/info', function(req, res){
     return data.json()
    })
    .then(function(json){
-    console.log(json.data[0].description)
+    console.log(json.data)
     res.render('states/index', {stateChosen: json.data})
     //res.json(json)
    })
@@ -49,7 +49,7 @@ app.post('/info', function(req, res){
 })
 
 app.listen(3000, function(){
-  console.log('magic on 3k, yo.');
+  console.log('magic on 3k');
 });
 
 

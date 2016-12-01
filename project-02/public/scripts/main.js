@@ -14,10 +14,14 @@ $(document).ready(function() {
  // }
 
 
-// $('#submit_button').on('click', function(e){
-//   var name = $('#state_entered').val()
-//    e.preventDefault()
-//   //getData(name)
+$('#submit_button').on('click', function(e){
+  var name = $('#state_entered').val()
+   // e.preventDefault()
+     $('#text-box').html(name + '!')
+   setTimeout(function() {
+    // location.href = '/states';
+  }, 2000);
+  //getData(name)
 //   $.ajax({
 //      method: "POST",
 //      url: "/info",
@@ -25,11 +29,11 @@ $(document).ready(function() {
 //       })
 //    .done(function(data) {
 //      console.log(data)
-//    })
+   })
 
 
 
-   //$('#text-box').html(name + '!')
+  //  $('#text-box').html(name + '!')
   //  setTimeout(function() {
   //   location.href = '/states';
   // }, 2000);
