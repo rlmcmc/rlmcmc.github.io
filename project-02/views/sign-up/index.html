@@ -2,22 +2,24 @@
 <html id="sign_up_image">
   <head>
 
+ <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
  <link rel="stylesheet" href="/stylesheets/style.css">
 
   </head>
   <body>
-        <h1 class="sign-up">Sign Up for The National Parks Directory</h1>
+        <h1 id="text-box">Sign Up for The National Parks Directory</h1>
             <form class="form-horizontal" action="/signup" method="post">
               <fieldset>
                 <legend>Sign Up</legend>
-                  <label for="inputEmail">Email</label>
+                  <label for="inputEmail">Name</label>
 
-                    <input name="email" type="text" placeholder="Email">
+                    <input name="email" type="text" placeholder="Name">
 
                   <label for="inputPassword">Password</label>
                     <input name="password" type="password"  placeholder="Password">
 
                     <button type="submit">Join!</button>
+                    <p id="user_created"></p>
 
               </fieldset>
             </form>

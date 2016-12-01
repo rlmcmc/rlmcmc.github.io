@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html id="sign_in_image">
   <head>
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
   <link rel="stylesheet" href="/stylesheets/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
   </head>
   <body>
-        <h1>Sign In to The National Parks Directory</h1>
+        <h1 id="sign-in-text-box">Sign In to The National Parks Directory</h1>
         <br>
         {{#logged_in}}
             <h4>Welcome {{email}}!</h4>
@@ -18,11 +18,11 @@
             <form action="/login" method="post">
               <fieldset>
                 <legend>Login</legend>
-                  <label for="inputEmail">Email</label>
-                    <input name="email" type="text" placeholder="Email">
-                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-
+                  <label for="inputEmail">Name</label>
+                    <input name="email" type="text" placeholder="Name">
+                <label for="inputPassword">Password</label>
                     <input name="password" type="password" placeholder="Password">
+
 
 
 

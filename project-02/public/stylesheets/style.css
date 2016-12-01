@@ -14,6 +14,14 @@
   float: right;
   padding-right: 10px;
 }
+#sign-in-text-box {
+  color: yellow;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  font-family: 'Bungee', cursive;
+  font-size: 40px;
+}
 #sign-up {
   float: left;
   padding-left: 10px;
@@ -23,6 +31,11 @@
 }
 #sign_up_image {
   background: url("../yellowstone.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#sign_in_image {
+  background: url("../moab.jpg") no-repeat center center fixed;
   background-size: cover;
 
 }
@@ -68,6 +81,11 @@ h1, p {
 
 .content {
   display: inline-block;
+}
+#id {
+  color: yellow;
+  font-size: 20px;
+  font-family: 'Bungee', cursive;
 }
 
 
