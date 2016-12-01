@@ -6,13 +6,31 @@
   background: url("../mojave.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-#text-box, #sign-in{
+#text-box, #sign-in, #sign-up{
   display: inline-block;
 }
 
 #sign-in {
   float: right;
   padding-right: 10px;
+}
+#sign-up {
+  float: left;
+  padding-left: 10px;
+}
+.sign-up{
+  text-align: center;
+}
+#sign_up_image {
+  background: url("../yellowstone.jpeg") no-repeat center center fixed;
+  background-size: cover;
+
+}
+a {
+  text-decoration: none;
+  color: darkgreen;
+  font-family: 'Bungee', cursive;
+
 }
 .pure-form {
   margin-top: 0px;
@@ -24,7 +42,7 @@
 #text-box {
   margin-top: 10px;
   margin-bottom: 50px;
-  padding-left: 50px;
+  padding-left: 20px;
   font-family: 'Bungee', cursive;
   font-size: 40px;
   color: darkgreen;

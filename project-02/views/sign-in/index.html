@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+        <h1>Sign In to The National Parks Directory</h1>
+        <br>
+        {{#logged_in}}
+            <h4>Welcome {{email}}!</h4>
+
+
+
+          <a href="/logout">Logout!</a>
+        {{/logged_in}}
+        {{^logged_in}}
+            <form action="/login" method="post">
+              <fieldset>
+                <legend>Login</legend>
+                  <label for="inputEmail">Email</label>
+                    <input name="email" type="text" placeholder="Email">
+                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+
+                    <input name="password" type="password" placeholder="Password">
+
+
+
+                    <button type="submit">Login</button>
+
+              </fieldset>
+            </form>
+
+          <p>Not a member? <a href="/sign-up">Sign Up!</a></p>
+
+        {{/logged_in}}
+  </body>
+</html>
