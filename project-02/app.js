@@ -3,12 +3,13 @@ var exp = require ('express'),
     bdPars = require('body-parser'),
     methodOverride = require('method-override'),
     pgp = require('pg-promise')(),
-    db = pgp('postgres://robertmathewsiii@localhost:5432/proj2_db'),
+    db = pgp(process.env.DATABASE_URL || 'postgres://robertmathewsiii@localhost:5432/proj2_db'),
     app = exp(),
     Yelp = require('yelp'),
     fetch = require('node-fetch'),
-    session = require('express-session');
+    session = require('express-session'),
     bcrypt = require('bcrypt');
+
 
 app.engine('html', mstE());
 app.set('view engine','html');
@@ -23,8 +24,8 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false }
 }))
-
-app.listen(3000, function(){
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function(){
   console.log('magic on 3k');
 });
 
@@ -52,7 +53,7 @@ app.post('/info', function(req, res){
    var state = req.body.state
   fetch('https://developer.nps.gov/api/v0/parks?stateCode='+state, {
     method: 'GET',
-    headers: { "Authorization": "6047EBD8-4C76-4996-9A3D-C4746F229420"},
+    headers: { "Authorization": NATIONAL_PARKS},
   })
    .then(function(data){
     return data.json()
@@ -120,9 +121,9 @@ app.post('/login', function(req, res){
 
 app.post('/save', function(req, res){
   var data = req.body;
-  console.log(data);
-  db.none("INSERT INTO parks (name, description, user_id) VALUES ($1, $2, $3)", [data.name, data.body, req.session.user.id]).then(function(){
-
+  console.log('DATA BODY', data)
+  console.log('DATA DESCRIPTION', data.description);
+  db.none("INSERT INTO parks (name, description, user_id) VALUES ($1, $2, $3)", [data.name, data.description, req.session.user.id]).then(function(){
   })
 })
 

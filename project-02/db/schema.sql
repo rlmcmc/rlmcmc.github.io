@@ -1,15 +1,16 @@
+DROP TABLE IF EXISTS parks;
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   email VARCHAR(50) UNIQUE,
-  password_digest VARCHAR(255)
+  password_digest VARCHAR NOT NULL
 );
 
 CREATE TABLE parks (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(50) UNIQUE,
-  description VARCHAR(255),
+  name VARCHAR UNIQUE,
+  description VARCHAR NOT NULL,
   user_id INTEGER REFERENCES users
 );
 

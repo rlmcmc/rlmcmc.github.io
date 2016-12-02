@@ -88,6 +88,33 @@ h1, p {
   font-family: 'Bungee', cursive;
 }
 
+.park-name{
+  background: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  margin: 40px 0px 0px 50px;
+  border: 0;
+  width: 698px;
+}
+
+.park-description {
+  background: transparent;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 80px 30px 30px;
+  border: 0;
+  width: 698px; height: 105px;
+}
+.save-button {
+  margin-left: 200px;
+}
+
 
 
 
