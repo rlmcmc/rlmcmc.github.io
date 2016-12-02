@@ -11,8 +11,11 @@
 <h1> National Parks in {{state}} </h1>
 <div id="text">
 {{#stateChosen}}
-    <h2>{{name}}</h2>
-    <p>{{description}}</p>
+    <form class="pure-form" method="POST" action="/save">
+    <textarea id="name" type="text" name="name" value ="{{name}}">{{name}}</textarea>
+    <textarea id="description" type="text" name="description" value ="{{description}}">{{description}}</textarea>
+    <button type="submit" class="pure-button">Save</button>
+  </form>
 {{/stateChosen}}
 </div>
 </div>

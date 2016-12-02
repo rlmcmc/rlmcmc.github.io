@@ -84,7 +84,6 @@ app.post('/signup', function(req, res){
       "INSERT INTO users (email, password_digest) VALUES ($1, $2)",
       [data.email, hash]
     ).then(function(){
-      // res.send('User created!');
       res.redirect('/');
 
     })
@@ -118,4 +117,12 @@ app.post('/login', function(req, res){
     });
   });
 });
+
+app.post('/save', function(req, res){
+  var data = req.body;
+  console.log(data);
+  db.none("INSERT INTO parks (name, description, user_id) VALUES ($1, $2, $3)", [data.name, data.body, req.session.user.id]).then(function(){
+
+  })
+})
 
