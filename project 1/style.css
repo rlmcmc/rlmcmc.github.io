@@ -31,7 +31,7 @@ p {
 }
 
 
-#hillary {
+/* #hillary {
   position: absolute;
   background-size: contain;
   background-image: url(hillary.png);
@@ -51,7 +51,7 @@ p {
   transition: top 2s, left 2s;
   transition-timing-function: linear;
   background-repeat: no-repeat;
-}
+} */
 #cersei {
   position: absolute;
   background-size: contain;
