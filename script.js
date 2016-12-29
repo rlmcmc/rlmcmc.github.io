@@ -86,19 +86,19 @@
       }, 1500)
       $(this).removeClass('person')
     })
-    $hillary.on("click", function() {
-        $('#game_message').text('Hillary killed! Gain 5 points');
-      $yourScore = Number($yourScore) + 5;
-      $('#score_text').html($yourScore);
-      setTimeout(function() {
-        $('#game_message').text('');
-      }, 2000)
-      $hillary.addClass("dead");
-      setTimeout(function() {
-        $hillary.remove();
-      }, 1500)
-      $(this).removeClass('person')
-    })
+//     $hillary.on("click", function() {
+//         $('#game_message').text('Hillary killed! Gain 5 points');
+//       $yourScore = Number($yourScore) + 5;
+//       $('#score_text').html($yourScore);
+//       setTimeout(function() {
+//         $('#game_message').text('');
+//       }, 2000)
+//       $hillary.addClass("dead");
+//       setTimeout(function() {
+//         $hillary.remove();
+//       }, 1500)
+//       $(this).removeClass('person')
+//     })
     $cersei.on("click", function() {
         $('#game_message').text('Cersei killed! Gain 1 point');
       $yourScore = Number($yourScore) + 1;
